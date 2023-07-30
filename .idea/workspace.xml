@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fbf99fe-29d8-4cd7-821f-5c6395d6f5b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/elbaih/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F01_MobileList.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P01_HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P02_MobileList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D01_MobileList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/testRunner/Runners.java" afterDir="false" />
+    <list default="true" id="8fbf99fe-29d8-4cd7-821f-5c6395d6f5b5" name="Changes" comment="first test case">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F02_CostVerify.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P03_DetailsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D02_VerifyCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D01_MobileList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D01_MobileList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +49,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Verify cost on list page equals cost in details page">
     <configuration name="Scenario: Verify  items in mobile list page can be sorted by name" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F01_MobileList.feature" />
@@ -80,8 +72,35 @@
         <option name="MakeProject" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Verify cost on list page equals cost in details page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F02_CostVerify.feature" />
+      <option name="GLUE" value="com.elbaih.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Guru99ECommerceDemo" />
+      <option name="NAME_FILTER" value="^Verify cost on list page equals cost in details page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify cost on list page equals cost in details page$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify cost on list page equals cost in details page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Scenario: Verify cost on list page equals cost in details page" />
+      <item itemvalue="Cucumber Java.Scenario: Verify  items in mobile list page can be sorted by name" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Verify cost on list page equals cost in details page" />
         <item itemvalue="Cucumber Java.Scenario: Verify  items in mobile list page can be sorted by name" />
       </list>
     </recent_temporary>
@@ -95,20 +114,27 @@
       <option name="presentableId" value="Default" />
       <updated>1690695559504</updated>
     </task>
+    <task id="LOCAL-00001" summary="first test case">
+      <created>1690745948769</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690745948769</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first test case" />
+    <option name="LAST_COMMIT_MESSAGE" value="first test case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D01_MobileList.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D01_MobileList.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D02_VerifyCost.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
