@@ -39,4 +39,6 @@ P03_DetailsPage detailsPage=new P03_DetailsPage();
        assrt.assertEquals(listPriceText,detailPriceText);
        assrt.assertAll();
     }
+
+
 }

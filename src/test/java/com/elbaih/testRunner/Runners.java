@@ -1,5 +1,6 @@
 package com.elbaih.testRunner;
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions
@@ -20,5 +21,5 @@ import io.cucumber.testng.CucumberOptions;
 
         )
 
-public class Runners {
+public class Runners extends AbstractTestNGCucumberTests {
 }
