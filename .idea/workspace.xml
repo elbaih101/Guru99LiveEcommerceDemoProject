@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fbf99fe-29d8-4cd7-821f-5c6395d6f5b5" name="Changes" comment="comparing the price of list page to detail page">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F03_VerifyCart.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P04_Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D03_VerifyCart.java" afterDir="false" />
+    <list default="true" id="8fbf99fe-29d8-4cd7-821f-5c6395d6f5b5" name="Changes" comment="added verify shoping cart feature">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F04_Compare.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P05_ComparePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D04_Compare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F02_CostVerify.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/F02_CostVerify.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P02_MobileList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P02_MobileList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D02_VerifyCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D02_VerifyCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D03_VerifyCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D03_VerifyCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/testRunner/Runners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/testRunner/Runners.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +52,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.Runners">
+  <component name="RunManager" selected="Cucumber Java.Scenario: verifyin the ability to compare two products">
     <configuration name="Scenario: Verify  items in mobile list page can be sorted by name" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F01_MobileList.feature" />
@@ -117,6 +118,28 @@
         <option name="MakeProject" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: verifyin the ability to compare two products" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F04_Compare.feature" />
+      <option name="GLUE" value="com.elbaih.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Guru99ECommerceDemo" />
+      <option name="NAME_FILTER" value="^verifyin the ability to compare two products$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verifyin the ability to compare two products$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: verifyin the ability to compare two products" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runners" type="TestNG" nameIsGenerated="true">
       <module name="Guru99ECommerceDemo" />
       <shortenClasspath name="NONE" />
@@ -147,12 +170,14 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Scenario: Verify you cant more product in the cart thats available in the store" />
+      <item itemvalue="Cucumber Java.Scenario: verifyin the ability to compare two products" />
       <item itemvalue="Cucumber Java.Scenario: Verify cost on list page equals cost in details page" />
       <item itemvalue="Cucumber Java.Scenario: Verify  items in mobile list page can be sorted by name" />
       <item itemvalue="TestNG.Runners" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: verifyin the ability to compare two products" />
         <item itemvalue="Cucumber Java.Scenario: Verify cost on list page equals cost in details page" />
         <item itemvalue="Cucumber Java.Scenario: Verify  items in mobile list page can be sorted by name" />
       </list>
@@ -181,12 +206,20 @@
       <option name="project" value="LOCAL" />
       <updated>1690749983184</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added verify shoping cart feature">
+      <created>1690834797693</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690834797693</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first test case" />
     <MESSAGE value="comparing the price of list page to detail page" />
-    <option name="LAST_COMMIT_MESSAGE" value="comparing the price of list page to detail page" />
+    <MESSAGE value="added verify shoping cart feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="added verify shoping cart feature" />
   </component>
 </project>
