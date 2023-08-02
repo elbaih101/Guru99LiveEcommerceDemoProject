@@ -27,23 +27,26 @@ public class D04_Compare {
 
     @When("user clicks on add to compare button for two mobile phones {string} and {string}")
     public void userClicksOnAddToCompareButtonForTwoMobilePhonesAnd(String arg0, String arg1) {
+        WebElement galaxycomparebutton;
         for (WebElement mobile : mobileList.mobilelist) {
-            WebElement galaxycomparebutton = mobile.findElement(By.xpath("//*/a[@title=\"Samsung Galaxy\"]/..//following-sibling::*//ul//a[@class=\"link-compare\"]"));
-            if (galaxycomparebutton != null){
-                galaxycomparebutton.click();
-               break;}
-        }
-
-        wait.until(ExpectedConditions.visibilityOf(mobileList.succesMsg));
-        PageFactory.initElements(Hooks.driver,mobileList);
-        for (WebElement mobile : mobileList.mobilelist) {
-            WebElement sonycomparebutton = mobile.findElement(By.xpath("//*/a[@title=\"Sony Xperia\"]/..//following-sibling::*//ul//a[@class=\"link-compare\"]"));
-            if (sonycomparebutton != null){
-                sonycomparebutton.click();
+            try {
+                galaxycomparebutton = mobile.findElement(By.xpath("//*/a[@title=\"Samsung Galaxy\"]/..//following-sibling::*//ul//a[@class=\"link-compare\"]"));
+                if (galaxycomparebutton != null)
+                    galaxycomparebutton.click();
+            } catch (StaleElementReferenceException e) {
                 break;
-        }}
-
-
+            }
+        }
+        wait.until(ExpectedConditions.visibilityOf(mobileList.succesMsg));
+        for (WebElement mobile : mobileList.mobilelist) {
+            try {
+                WebElement sonycomparebutton = mobile.findElement(By.xpath("//*/a[@title=\"Sony Xperia\"]/..//following-sibling::*//ul//a[@class=\"link-compare\"]"));
+                if (sonycomparebutton != null)
+                    sonycomparebutton.click();
+            } catch (StaleElementReferenceException e) {
+                break;
+            }
+        }
     }
 
     @And("user clicks on the compare button on the compare menue")
@@ -54,7 +57,7 @@ public class D04_Compare {
 
     @Then("a pop up window pops containing the two products")
     public void aPopUpWindowPopsContainingTheTwoProducts() {
-        ArrayList<String> windows =new ArrayList<>(Hooks.driver.getWindowHandles());
+        ArrayList<String> windows = new ArrayList<>(Hooks.driver.getWindowHandles());
         Hooks.driver.switchTo().window(windows.get(1));
         assrt.assertTrue(compare.compareTable.findElement(By.xpath(compare.xperiaNameXpath)).isDisplayed() && compare.compareTable.findElement(By.xpath(compare.galaxyNameXpath)).isDisplayed());
 
