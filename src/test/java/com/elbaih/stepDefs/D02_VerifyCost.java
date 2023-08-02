@@ -10,12 +10,12 @@ import org.testng.asserts.SoftAssert;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class D02_VerifyCost {
-    P02_MobileList mobileList = new P02_MobileList();
-    P03_DetailsPage detailsPage = new P03_DetailsPage();
+    final P02_MobileList mobileList = new P02_MobileList();
+    final P03_DetailsPage detailsPage = new P03_DetailsPage();
     String listPriceText;
     String detailPriceText;
-    SoftAssert assrt = new SoftAssert();
-    AtomicReference<WebElement> temp = new AtomicReference<>(null);
+    final SoftAssert assrt = new SoftAssert();
+    final AtomicReference<WebElement> temp = new AtomicReference<>(null);
 
     @Then("get the cost of the {string} mobilephone")
     public void getTheCostOfTheMobilephone(String arg0) {

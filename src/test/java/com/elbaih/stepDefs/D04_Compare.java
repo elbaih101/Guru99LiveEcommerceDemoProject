@@ -7,24 +7,20 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
 import java.util.ArrayList;
-import java.util.Set;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class D04_Compare {
-    WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(2));
-    SoftAssert assrt = new SoftAssert();
+    final WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(2));
+    final SoftAssert assrt = new SoftAssert();
 
-    P02_MobileList mobileList = new P02_MobileList();
-    P05_ComparePage compare = new P05_ComparePage();
+    final P02_MobileList mobileList = new P02_MobileList();
+    final P05_ComparePage compare = new P05_ComparePage();
 
     @When("user clicks on add to compare button for two mobile phones {string} and {string}")
     public void userClicksOnAddToCompareButtonForTwoMobilePhonesAnd(String arg0, String arg1) {

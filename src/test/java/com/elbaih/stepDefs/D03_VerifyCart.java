@@ -12,12 +12,12 @@ import org.testng.asserts.SoftAssert;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class D03_VerifyCart {
-    SoftAssert assrt=new SoftAssert();
+    final SoftAssert assrt=new SoftAssert();
 
-    P02_MobileList mobileList = new P02_MobileList();
-    P04_Cart cart = new P04_Cart();
+    final P02_MobileList mobileList = new P02_MobileList();
+    final P04_Cart cart = new P04_Cart();
 
-    AtomicReference<WebElement> temp = new AtomicReference<>(null);
+    final AtomicReference<WebElement> temp = new AtomicReference<>(null);
 
     @When("user click on the add to cart button for the sony xperia phone")
     public void userClickOnTheAddToCartButtonForTheSonyXperiaPhone() {

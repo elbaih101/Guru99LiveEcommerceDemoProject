@@ -22,12 +22,19 @@ public class Utils {
              element= driver.findElement(by);
 
                 break;
-            } catch(StaleElementReferenceException e) {
+            } catch(StaleElementReferenceException ignored) {
             }
             attempts++;
         }
         return element;
     }
+
+    /**
+     *
+     * @param base BAse webElement to find through ut
+     * @param by the method to find element
+     * @return returns the WebElement
+     */
     public static WebElement retryingFind(WebElement base,By by) {
         WebElement element = null;
         int attempts = 0;
@@ -36,7 +43,7 @@ public class Utils {
                 element= base.findElement(by);
 
                 break;
-            } catch(StaleElementReferenceException e) {
+            } catch(StaleElementReferenceException ignored) {
             }
             attempts++;
         }

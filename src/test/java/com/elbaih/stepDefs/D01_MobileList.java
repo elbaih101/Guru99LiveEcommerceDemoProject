@@ -8,24 +8,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
-import java.sql.Time;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class D01_MobileList {
-    WebDriver driver = Hooks.driver;
-    P01_HomePage homePage =new P01_HomePage();
-    P02_MobileList mobileList = new P02_MobileList();
+    final WebDriver driver = Hooks.driver;
+    final P01_HomePage homePage =new P01_HomePage();
+    final P02_MobileList mobileList = new P02_MobileList();
 
-    SoftAssert assrt = new SoftAssert();
+    final SoftAssert assrt = new SoftAssert();
 
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    final WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
     @Given("user goes to the home page {string}")
     public void userGoesToTheHomePage(String url) {
