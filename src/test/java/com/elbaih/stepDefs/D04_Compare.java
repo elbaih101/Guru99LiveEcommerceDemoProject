@@ -2,6 +2,7 @@ package com.elbaih.stepDefs;
 
 import com.elbaih.pages.P02_MobileList;
 import com.elbaih.pages.P05_ComparePage;
+import com.elbaih.utils.Utils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -28,24 +29,18 @@ public class D04_Compare {
     @When("user clicks on add to compare button for two mobile phones {string} and {string}")
     public void userClicksOnAddToCompareButtonForTwoMobilePhonesAnd(String arg0, String arg1) {
         WebElement galaxycomparebutton;
+        WebElement sonycomparebutton;
         for (WebElement mobile : mobileList.mobilelist) {
-            try {
-                galaxycomparebutton = mobile.findElement(By.xpath("//*/a[@title=\"Samsung Galaxy\"]/..//following-sibling::*//ul//a[@class=\"link-compare\"]"));
-                if (galaxycomparebutton != null)
-                    galaxycomparebutton.click();
-            } catch (StaleElementReferenceException e) {
-                break;
-            }
+            galaxycomparebutton = Utils.retryingFind(mobile, By.xpath("//*/a[@title=\"Samsung Galaxy\"]/..//following-sibling::*//ul//a[@class=\"link-compare\"]"));
+            if (galaxycomparebutton != null)
+                galaxycomparebutton.click();
+
         }
         wait.until(ExpectedConditions.visibilityOf(mobileList.succesMsg));
         for (WebElement mobile : mobileList.mobilelist) {
-            try {
-                WebElement sonycomparebutton = mobile.findElement(By.xpath("//*/a[@title=\"Sony Xperia\"]/..//following-sibling::*//ul//a[@class=\"link-compare\"]"));
-                if (sonycomparebutton != null)
-                    sonycomparebutton.click();
-            } catch (StaleElementReferenceException e) {
-                break;
-            }
+            sonycomparebutton = Utils.retryingFind(mobile, By.xpath("//*/a[@title=\"Sony Xperia\"]/..//following-sibling::*//ul//a[@class=\"link-compare\"]"));
+            if (sonycomparebutton != null)
+                sonycomparebutton.click();
         }
     }
 
