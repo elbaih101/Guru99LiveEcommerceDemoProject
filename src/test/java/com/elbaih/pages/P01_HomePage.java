@@ -31,6 +31,8 @@ public class P01_HomePage {
 
     @FindBy(css = "a[title=\"Register\"]")
     public WebElement registerlink;
+    @FindBy(css = "a[title=\"Log In\"]")
+    public  WebElement loginLink;
 
 
 }

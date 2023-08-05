@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fbf99fe-29d8-4cd7-821f-5c6395d6f5b5" name="Changes" comment="trying to clean the code">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F05_WishList.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P06_RegisterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P07_TvList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P08_WishList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D05_WishList.java" afterDir="false" />
+    <list default="true" id="8fbf99fe-29d8-4cd7-821f-5c6395d6f5b5" name="Changes" comment="adding wish list feature">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F06_ShopingCart.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F07_Orders.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P09_LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P10_CustomerPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P11_ShopingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P12_Checkout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P13_MyOrdersPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D06_ShopingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D07_VerifyOrders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/elbaih/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/elbaih/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P01_HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P01_HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D02_VerifyCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D02_VerifyCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P08_WishList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P08_WishList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/Hooks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +60,7 @@
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
 }</component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: verifying u can send wish list through email">
+  <component name="RunManager" selected="Cucumber Java.Scenario: verify you can save previously placed orders as pdf">
     <configuration name="Scenario: Verify  items in mobile list page can be sorted by name" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F01_MobileList.feature" />
@@ -108,6 +114,49 @@
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify you cant more product in the cart thats available in the store$&quot;" />
       <shortenClasspath name="NONE" />
       <option name="SUGGESTED_NAME" value="Scenario: Verify you cant more product in the cart thats available in the store" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: verify user can puchase a product using registered email" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F06_ShopingCart.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Guru99ECommerceDemo" />
+      <option name="NAME_FILTER" value="^verify user can puchase a product using registered email$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verify user can puchase a product using registered email$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: verify user can puchase a product using registered email" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: verify you can save previously placed orders as pdf" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F07_Orders.feature" />
+      <option name="GLUE" value="com.elbaih.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Guru99ECommerceDemo" />
+      <option name="NAME_FILTER" value="^verify you can save previously placed orders as pdf$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verify you can save previously placed orders as pdf$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: verify you can save previously placed orders as pdf" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -192,8 +241,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Scenario: verify user can puchase a product using registered email" />
       <item itemvalue="Cucumber Java.Scenario: verifying u can send wish list through email" />
       <item itemvalue="Cucumber Java.Scenario: Verify you cant more product in the cart thats available in the store" />
+      <item itemvalue="Cucumber Java.Scenario: verify you can save previously placed orders as pdf" />
       <item itemvalue="Cucumber Java.Scenario: verifyin the ability to compare two products" />
       <item itemvalue="Cucumber Java.Scenario: Verify cost on list page equals cost in details page" />
       <item itemvalue="Cucumber Java.Scenario: Verify  items in mobile list page can be sorted by name" />
@@ -201,6 +252,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: verify you can save previously placed orders as pdf" />
         <item itemvalue="Cucumber Java.Scenario: verifyin the ability to compare two products" />
         <item itemvalue="Cucumber Java.Scenario: Verify cost on list page equals cost in details page" />
         <item itemvalue="Cucumber Java.Scenario: Verify  items in mobile list page can be sorted by name" />
@@ -265,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690964536265</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adding wish list feature">
+      <created>1691009981364</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691009981364</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -274,6 +333,7 @@
     <MESSAGE value="added verify shoping cart feature" />
     <MESSAGE value="added verify compare product feature" />
     <MESSAGE value="trying to clean the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to clean the code" />
+    <MESSAGE value="adding wish list feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding wish list feature" />
   </component>
 </project>

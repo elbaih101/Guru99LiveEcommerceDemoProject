@@ -19,5 +19,6 @@ public class P08_WishList {
     public WebElement emailField;
     @FindBy(id = "message")
     public WebElement messageField;
-
+    @FindBy(css = "Button[title=\"Add to Cart\"]")
+public WebElement addtoCartButton;
 }
