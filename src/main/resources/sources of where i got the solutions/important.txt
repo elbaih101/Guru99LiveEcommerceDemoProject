@@ -1,0 +1,8 @@
+-->print screen scenario<--
+https://stackoverflow.com/questions/68788695/how-to-handle-firefox-print-dialog-box-in-selenium -->  the real deal
+https://stackoverflow.com/questions/57103701/python-selenium-printing-save-as-pdf-waiting-for-filename-input -->may help not sure
+https://stackoverflow.com/questions/20984698/use-firefox-print-or-save-as-features-using-selenium-webdriver -->i think it helped
+
+--> download scenario<--
+https://stackoverflow.com/questions/60200425/how-to-handle-pop-up-window-dialog-to-download-file-automatically-with-firefox-p --> will help but in onther scenario
+https://tutorialshut.com/how-to-download-files-in-selenium-using-the-firefox-browser/ -->good soucre
