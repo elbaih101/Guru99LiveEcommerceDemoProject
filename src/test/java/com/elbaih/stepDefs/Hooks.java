@@ -51,8 +51,8 @@ public class Hooks {
 //      options.addPreference("browser.download.manager.useWindow", false);
 //      options.addPreference("browser.download.manager.showAlertOnComplete", false);
 //      options.addPreference("browser.download.manager.closeWhenDone", false);
-      //printer config
 
+      //printer config
       options.addPreference("print.always_print_silent",true);
       options.addPreference("print.save_print_settings",false);
       options.addPreference("print_printer", "Microsoft Print to PDF");

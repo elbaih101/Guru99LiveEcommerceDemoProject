@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fbf99fe-29d8-4cd7-821f-5c6395d6f5b5" name="Changes" comment="adding verify user can download his order as pdf&#10;it was hard as diamonds" />
+    <list default="true" id="8fbf99fe-29d8-4cd7-821f-5c6395d6f5b5" name="Changes" comment="adding verify user can download his order as pdf&#10;it was hard as diamonds">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/Hooks.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +47,11 @@
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java maven projects\Guru99ECommerceDemo\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="Cucumber Java.Scenario: verify you can save previously placed orders as pdf">
     <configuration name="Scenario: Verify  items in mobile list page can be sorted by name" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
@@ -315,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691242037425</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adding verify user can download his order as pdf&#10;it was hard as diamonds">
+      <created>1691242345100</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1691242345100</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
