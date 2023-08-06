@@ -44,5 +44,7 @@ public class P12_Checkout {
     public WebElement submitButton;
     @FindBy(className = "page-title")
     public WebElement succesMsg;
+    @FindBy(xpath = "//p[contains(text(),\"Your order # is\")]/a")
+    public WebElement orderNum;
 
 }

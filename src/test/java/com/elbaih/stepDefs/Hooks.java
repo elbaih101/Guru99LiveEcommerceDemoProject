@@ -42,7 +42,9 @@ public class Hooks {
       options.addPreference("browser.helperApps.neverAsk.openFile", "application/octet-stream;application/vnd.ms-excel;text/html,text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,image/jpeg,text/html,text/plain,application/msword,application/xml,document/pdf,application/pdf,application/x-pdf,document");
       options.addPreference("browser.helperApps.neverAsk.saveToDisk", "application/octet-stream;application/vnd.ms-excel;text/html,text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,image/jpeg,text/html,text/plain,application/msword,application/xml,document/pdf,application/pdf,application/x-pdf,document");
       options.addPreference("browser.helperApps.alwaysAsk.force", false);
+
       //download options
+
 //      options.addPreference("browser.download.folderList", 2);
 //      options.addPreference("browser.download.manager.showWhenStarting", false);
 //      options.addPreference("browser.download.dir", "D:\\java maven projects\\Guru99ECommerceDemo\\src\\main\\resources\\savedorders");
@@ -53,6 +55,7 @@ public class Hooks {
 //      options.addPreference("browser.download.manager.closeWhenDone", false);
 
       //printer config
+
       options.addPreference("print.always_print_silent",true);
       options.addPreference("print.save_print_settings",false);
       options.addPreference("print_printer", "Microsoft Print to PDF");
@@ -61,7 +64,7 @@ public class Hooks {
       options.addPreference("print.printer_Microsoft_Print_to_PDF.print_to_file", true);
       options.addPreference("print.printer_Microsoft_Print_to_PDF.print_to_filename", "D:\\java maven projects\\Guru99ECommerceDemo\\src\\main\\resources\\savedorders\\order.pdf");
 //      options.addPreference("print.printer_Mozilla_Save_to_PDF.print_paper_id", "iso_a4");
-//       options.addPreference("print.printer_Microsoft_Print_to_PDF.print_to_filename", "{your odrder}");
+//      options.addPreference("print.printer_Microsoft_Print_to_PDF.print_to_filename", "{your odrder}");
 
 
 
