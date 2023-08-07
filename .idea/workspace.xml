@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fbf99fe-29d8-4cd7-821f-5c6395d6f5b5" name="Changes" comment="adding verify user can download his order as pdf&#10;it was hard as diamonds">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D08_ReorderProduct.java" afterDir="false" />
+    <list default="true" id="8fbf99fe-29d8-4cd7-821f-5c6395d6f5b5" name="Changes" comment="adding verify user can reorder products">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D09_DiscountCoupons.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F07_Orders.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/F07_Orders.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P12_Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P12_Checkout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F06_ShopingCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/F06_ShopingCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P11_ShopingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P11_ShopingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D02_VerifyCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/D02_VerifyCost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <recent name="D:\java maven projects\Guru99ECommerceDemo\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: verify you can save previously placed orders as pdf">
+  <component name="RunManager" selected="Cucumber Java.Scenario: user can use discount coupons">
     <configuration name="Scenario: Verify  items in mobile list page can be sorted by name" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F01_MobileList.feature" />
@@ -109,6 +109,27 @@
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify you cant more product in the cart thats available in the store$&quot;" />
       <shortenClasspath name="NONE" />
       <option name="SUGGESTED_NAME" value="Scenario: Verify you cant more product in the cart thats available in the store" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: user can use discount coupons" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F06_ShopingCart.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Guru99ECommerceDemo" />
+      <option name="NAME_FILTER" value="^user can use discount coupons$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can use discount coupons$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: user can use discount coupons" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -239,6 +260,7 @@
       <item itemvalue="Cucumber Java.Scenario: verify user can puchase a product using registered email" />
       <item itemvalue="Cucumber Java.Scenario: verifying u can send wish list through email" />
       <item itemvalue="Cucumber Java.Scenario: Verify you cant more product in the cart thats available in the store" />
+      <item itemvalue="Cucumber Java.Scenario: user can use discount coupons" />
       <item itemvalue="Cucumber Java.Scenario: verify you can save previously placed orders as pdf" />
       <item itemvalue="Cucumber Java.Scenario: verifyin the ability to compare two products" />
       <item itemvalue="Cucumber Java.Scenario: Verify cost on list page equals cost in details page" />
@@ -247,6 +269,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: user can use discount coupons" />
         <item itemvalue="Cucumber Java.Scenario: verify you can save previously placed orders as pdf" />
         <item itemvalue="Cucumber Java.Scenario: verifyin the ability to compare two products" />
         <item itemvalue="Cucumber Java.Scenario: Verify cost on list page equals cost in details page" />
@@ -340,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691308212356</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="adding verify user can reorder products">
+      <created>1691311677243</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1691311677243</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -351,6 +381,7 @@
     <MESSAGE value="trying to clean the code" />
     <MESSAGE value="adding wish list feature" />
     <MESSAGE value="adding verify user can download his order as pdf&#10;it was hard as diamonds" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding verify user can download his order as pdf&#10;it was hard as diamonds" />
+    <MESSAGE value="adding verify user can reorder products" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding verify user can reorder products" />
   </component>
 </project>

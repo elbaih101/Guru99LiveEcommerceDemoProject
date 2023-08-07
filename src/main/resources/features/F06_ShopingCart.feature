@@ -12,3 +12,14 @@ Feature: verifying Shoping Cart
     Then  user chooses  payment method by check and clicks containue
     And user place orderbutton
     Then success message is shown containing "Your order has been received"
+
+    Scenario: user can use discount coupons
+      Given user goes to the home page "http://live.techpanda.org"
+      And user clicks on the Mobile menu
+      And user click on the add to cart button for the Iphone
+      When user enters the coupon "GURU50" and click apply
+      Then success message containing Coupon code "GURU50" was applied is shown
+      And the price is discounted by 5%
+
+
+

@@ -32,6 +32,10 @@ public class P11_ShopingCart {
     public WebElement updateTotalButton;
    @FindBy(css = "table[id=\"shopping-cart-totals-table\"] span[class=\"price\"]")
     public List<WebElement> prices;
-   @FindBy(className = "page-title")
+   @FindBy(className = "success-msg")
     public WebElement succesmsg;
+   @FindBy(id="coupon_code")
+    public  WebElement couponeField;
+   @FindBy(css = "Button[onclick=\"discountForm.submit(false)\"]")
+    public WebElement applyCouponButton;
 }
