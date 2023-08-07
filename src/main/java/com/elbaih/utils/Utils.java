@@ -58,7 +58,7 @@ public class Utils {
         for (int i = 0; i < dirContents.length; i++) {
             if (dirContents[i].getName().equals(fileName)) {
                 // File has been found, it can now be deleted:
-                dirContents[i].delete();
+//                dirContents[i].delete();
                 return true;
             }
         }

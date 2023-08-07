@@ -45,14 +45,14 @@ public class Hooks {
 
       //download options
 
-//      options.addPreference("browser.download.folderList", 2);
-//      options.addPreference("browser.download.manager.showWhenStarting", false);
-//      options.addPreference("browser.download.dir", "D:\\java maven projects\\Guru99ECommerceDemo\\src\\main\\resources\\savedorders");
-//      options.addPreference("browser.download.manager.alertOnEXEOpen", false);
-//      options.addPreference("browser.download.manager.focusWhenStarting", false);
-//      options.addPreference("browser.download.manager.useWindow", false);
-//      options.addPreference("browser.download.manager.showAlertOnComplete", false);
-//      options.addPreference("browser.download.manager.closeWhenDone", false);
+      options.addPreference("browser.download.folderList", 2);
+      options.addPreference("browser.download.manager.showWhenStarting", false);
+      options.addPreference("browser.download.dir", "D:\\java maven projects\\Guru99ECommerceDemo\\src\\main\\resources\\savedorders");
+      options.addPreference("browser.download.manager.alertOnEXEOpen", false);
+      options.addPreference("browser.download.manager.focusWhenStarting", false);
+      options.addPreference("browser.download.manager.useWindow", false);
+      options.addPreference("browser.download.manager.showAlertOnComplete", false);
+      options.addPreference("browser.download.manager.closeWhenDone", false);
 
       //printer config
 

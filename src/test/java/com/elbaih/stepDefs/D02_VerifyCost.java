@@ -40,4 +40,6 @@ public class D02_VerifyCost {
         assrt.assertEquals(listPriceText, detailPriceText);
         assrt.assertAll();
     }
+
+
 }
